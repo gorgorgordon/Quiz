@@ -1,0 +1,65 @@
+.title-font{
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.content-font{
+  font-family: 'Roboto', sans-serif;
+}
+
+body, button{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(165, 206, 240);
+  color: rgb(63, 1, 92);
+  font-size: 1.5em;
+}
+
+h3{
+  background-color: rgb(63, 1, 92);
+  color: rgb(165, 206, 240);
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionTitle{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+input{
+  display: none;
+}
+
+.answers label{
+  background-color: rgb(87, 111, 131);
+  margin: 2px;
+  padding: 0.5em;
+}
+
+.answers{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+input:checked + label{
+  background-color: aqua;
+}
+
+.result{
+  font-size: 2em;
+}
+
+.answers .correct-revealed{
+  background-color: rgb(64, 231, 64);
+}
+
+.answers .wrong-revealed{
+  background-color: rgb(231, 64, 64);
+}
